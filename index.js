@@ -14,10 +14,9 @@ function getUsers() {
     {
       headers: { Accept: 'application/vnd.github.v3+json' }
     }
-  ).then(response =>
-    response
-      .json()
-      .then(data => {
+  ).then(
+    response =>
+      response.json().then(data => {
         //console.log(searchBox.value);  //uncomment to see that value is being grabbed from the search box
         const userData = data.items.map(user => ({
           Name: `${user.login}`,
@@ -26,8 +25,7 @@ function getUsers() {
         }));
         //console.log(userData); //uncomment to see that the array is being populated with objects (users)
       })
-      .then(userData => {
-        appDiv.innerHTML = data.ToString();
-      })
+    //.then(usererData => {})
   );
+  appDiv.innerHTML = JSON.stringify(userData, null, 4);
 }
