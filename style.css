@@ -56,3 +56,7 @@ p {
 .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
+span {
+  color: grey;
+  font-size: 18px;
+}

@@ -27,7 +27,7 @@ function getUsers() {
 
         userData.forEach(user => {
           const followers = fetch(
-            'https://api.github.com/users/' + user.Name + '/followers',
+            'https://api.github.com/users/' + user.Name + '/followers', //this would give me problems as api search said "search limit exceeded", but it should work to get the list and the do a .length to get follower count
             {
               headers: { Accept: 'application/vnd.github.v3+json' }
               //}.then(response => response.json().then(fdata => fdata.items.map()))
