@@ -10,3 +10,4 @@ https://wesbos.com/javascript/04-the-dom/creating-html
 https://docs.github.com/en/rest/reference/search
 https://www.loginradius.com/blog/async/github-api/
 https://www.pluralsight.com/guides/using-fetch-with-github-api-v3
+https://www.w3schools.com/css/css3_pagination.asp#

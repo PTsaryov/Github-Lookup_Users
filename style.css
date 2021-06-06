@@ -1,6 +1,7 @@
 h1,
 h2 {
   font-family: Lato;
+  font-size: 40px;
 }
 body {
   background-color: #333;
@@ -24,4 +25,34 @@ input {
   padding: 10px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+a {
+  color: whitesmoke;
+  font-size: 24px;
+}
+p {
+  color: green;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
 }
