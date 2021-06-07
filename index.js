@@ -5,7 +5,10 @@
 const appDiv = document.getElementById('app');
 const searchBox = document.getElementById('searchinput');
 
-document.getElementById('searchbutton').addEventListener('mousedown', getUsers);
+var el = document.getElementById('searchbutton');
+if (el) {
+  el.addEventListener('mousedown', getUsers);
+}
 
 function getUsers() {
   fetch(
