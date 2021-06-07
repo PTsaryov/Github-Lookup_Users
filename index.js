@@ -7,7 +7,7 @@ const searchBox = document.getElementById('searchinput');
 
 var el = document.getElementById('searchbutton');
 if (el) {
-  el.addEventListener('click', getUsers);
+  el.addEventListener('mousedown', getUsers);
 }
 
 function getUsers() {
